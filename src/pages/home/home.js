@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import setTitle from '../../redux/actions/layout'
+import Layouts from '../../component/layout/layout.js'
 class Home extends React.Component{
   constructor(props) {
     super(props)
@@ -28,7 +29,7 @@ class Home extends React.Component{
   }
   render() {
     return (
-      <div>Home</div>
+      <div><Layouts/></div>
     )
   }
 }
