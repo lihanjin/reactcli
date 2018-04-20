@@ -1,8 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Loadable from 'react-loadable'
-
-const Loading = () => <div>Loading...</div>
+import Loading from '../component/Spin/index'
 const Home = Loadable({
   loader: () => import('../pages/home/home'),
   loading: Loading,
