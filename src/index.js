@@ -7,9 +7,7 @@ import Router from './router/index'
 import './style/index.css'
 ReactDOM.render((
   <Provider store={store}>
-    <div>
       <Router></Router>
-    </div>
   </Provider>
 ), document.getElementById("root"));
 registerServiceWorker();

@@ -6,6 +6,10 @@ const Loading = () => <div>Loading...</div>
 const Home = Loadable({
   loader: () => import('../pages/home/home'),
   loading: Loading,
+})
+const Login_Box = Loadable({
+  loader: () => import('../pages/login/index'),
+  loading: Loading,
 });
 class Router extends React.Component{
   render() {
@@ -13,6 +17,7 @@ class Router extends React.Component{
       <BrowserRouter>
       <Switch>
         <Route exact path='/' component={Home}/>
+        <Route exact path='/login' component={Login_Box}/>
       </Switch>
     </BrowserRouter>
     )
