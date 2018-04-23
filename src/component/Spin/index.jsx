@@ -13,9 +13,6 @@ class Spin_Component extends React.Component{
     size: PropTypes.string,
     tips: PropTypes.string
   }
-  constructor(props) {
-    super(props)
-  }
   render() {
     return (
       <div className="spin">
